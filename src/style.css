@@ -1,0 +1,589 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* General styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+p {
+  font-size: 1.5em;
+  color: #555;
+  padding-bottom: 20px;
+}
+
+/* Header styles */
+.header {
+  background-color: #cfcfcf;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Main content styles */
+.main-content {
+  background: radial-gradient(#fff, grey);
+}
+
+.welcome-section {
+  height: 90vh; /* Full viewport height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.welcome-section h1 {
+  margin-right: 325px;
+  font-size: 3.5em;
+}
+
+.welcome-section p {
+  font-size: 1.5em;
+}
+
+.scroll-to-top {
+  position: fixed; /* Fixed position to stay in view */
+  bottom: 20px; /* Distance from the bottom */
+  right: 50%; /* Distance from the right */
+  background-color: rgba(0, 0, 0, 0.558); /* Semi-transparent background */
+  color: white; /* Icon color */
+  border: none; /* No border */
+  border-radius: 50%; /* Circular shape */
+  padding: 10px; /* Padding around the icon */
+  font-size: 24px; /* Icon size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.scroll-to-top.visible {
+  display: block; /* Show the button when it should be visible */
+}
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn {
+  background-image: linear-gradient(
+    to right,
+    #e52d27 0%,
+    #90191d 51%,
+    #e52d27 100%
+  );
+  text-decoration: none;
+  padding: 8px 40px;
+  margin: 10px;
+  margin-right: 650px;
+  margin-top: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+
+  border-radius: 30px;
+  display: block;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects-column-one {
+  width: 30%;
+  padding: 100px;
+  margin-left: 150px;
+  text-align: left;
+  justify-content: center;
+}
+
+.projects-column-two {
+}
+
+.contact {
+  height: 120vh; /* Full viewport height */
+}
+
+.contact-column-one {
+  width: 30%;
+  padding: 100px;
+  margin-left: 150px;
+  text-align: left;
+  justify-content: center;
+}
+
+.contact-column-two {
+  text-align: left;
+  margin-top: 200px;
+}
+
+.column-one {
+  width: 60%;
+  padding: 100px;
+  margin-left: 150px;
+  text-align: left;
+  justify-content: center;
+}
+
+.column-two {
+  width: auto;
+
+  text-align: left;
+  justify-content: center;
+}
+
+.column img {
+  border: 5px solid white;
+  border-radius: 35px;
+}
+.footer {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  width: 100%;
+  background-color: black;
+
+  padding-top: 10px;
+  font-size: 14px; /* Slightly larger font for better readability */
+}
+
+.footer-container {
+  display: flex; /* Make the footer-container a flex container */
+  justify-content: center; /* Center items in the footer-container */
+  align-items: center; /* Center items vertically */
+}
+
+.footer-container p {
+  color: rgb(213, 213, 213); /* Change icon color to white */
+  margin: 0 10px; /* Adjust margin for spacing between items */
+}
+
+.footer a .svg-inline--fa {
+  border-radius: 50%;
+  color: rgb(213, 213, 213); /* Change icon color to white */
+  padding: 10px;
+}
+
+/* Ensure the body or main content container has relative positioning and enough height */
+body {
+  position: relative;
+  min-height: 100vh; /* Ensure the footer is at the bottom of the viewport */
+  margin: 0; /* Remove default body margin */
+}
+
+.projects {
+  height: 90vh; /* Full viewport height */
+  margin-bottom: 250px;
+}
+
+.projects-img {
+  width: 100%;
+  height: 300px; /* fixed height */
+  object-fit: cover;
+}
+
+/* Carousel.css */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: auto;
+}
+
+.carousel-slide {
+  display: block;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-slides {
+  display: flex;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 350px; /* Fixed height */ /* Ensures uniformity */
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Form container styles */
+.formcontainer {
+  width: 100%;
+  max-width: 600px; /* Adjust width as needed */
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 0 auto; /* Center the form container */
+}
+
+/* Form field styles */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 24px); /* Full width minus padding */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+textarea {
+  resize: vertical;
+}
+.contact_btn {
+  background: rgb(141, 140, 255);
+  background: radial-gradient(
+    circle,
+    rgba(141, 140, 255, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact_btn:hover {
+  background: rgb(131, 58, 180);
+  transform: scale(1.05);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.about-me p {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.about-me a .svg-inline--fa {
+  border-radius: 50%;
+  color: rgb(0, 0, 0); /* Change icon color to white */
+  padding: 10px;
+  font-size: 30px;
+  transition: transform 0s ease; /* Change duration here */
+}
+
+.about-me a .svg-inline--fa:hover {
+  transform: scale(1.1);
+}
+
+.about-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-links p {
+  padding-right: 5px;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-content {
+    padding-left: 10px;
+    width: 100%;
+  }
+  .footer {
+    padding-left: 10px;
+  }
+  h1 {
+    font-size: 2.5em; /* Smaller font size on smaller screens */
+  }
+
+  p {
+    font-size: 1.2em; /* Smaller paragraph font size */
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: 350px; /* Fixed height */ /* Ensures uniformity */
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .welcome-section {
+    margin-left: 10px; /* Adjust margin */
+    padding: 10px; /* Add padding */
+  }
+
+  .row {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .projects {
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .about-me {
+    height: 60vh;
+  }
+  .about-links {
+    align-items: center; /* Center icons */
+  }
+
+  .about-links p {
+    padding: 5px 0; /* Adjust spacing between stacked icons */
+  }
+
+  .btn {
+    padding: 8px 40px;
+    margin: 0px;
+    margin-right: 60%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .welcome-section {
+    height: 70vh;
+  }
+
+  .welcome-section h1 {
+    margin-left: 0;
+    margin-right: 25%;
+  }
+
+  .welcome-section p {
+    margin-left: 8%;
+  }
+
+  .formcontainer {
+    width: 90%; /* Make form width responsive */
+    margin: 0 auto; /* Center form */
+  }
+
+  .column-one,
+  .column-two {
+    margin-left: 50px;
+    width: 100%; /* Full width for columns on small screens */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .contact-column-one,
+  .contact-column-two {
+    margin-left: 50px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact-column-two {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .projects-column-two {
+    margin-top: 5%;
+  }
+
+  .projects-column-one {
+    margin-left: 50px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .projects-column-two {
+    margin-left: 0px;
+  }
+
+  .carousel {
+    max-width: 75%;
+  }
+
+  .carousel-slide img {
+    height: auto; /* Ensure images scale appropriately */
+  }
+
+  .contact {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .formcontainer {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    padding-left: 10px;
+    width: 100%;
+  }
+  .footer {
+    padding-left: 10px;
+  }
+  h1 {
+    font-size: 2.5em; /* Smaller font size on smaller screens */
+  }
+
+  p {
+    font-size: 1.2em; /* Smaller paragraph font size */
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: 350px; /* Fixed height */ /* Ensures uniformity */
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .welcome-section {
+    padding-top: 100px;
+    margin-left: 30px; /* Adjust margin */
+    padding: 10px; /* Add padding */
+  }
+
+  .row {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .projects {
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .about-me {
+    height: auto;
+  }
+  .about-links {
+    align-items: center; /* Center icons */
+  }
+
+  .about-links p {
+    padding: 5px 0; /* Adjust spacing between stacked icons */
+  }
+
+  .btn {
+    padding: 8px 40px;
+    margin: 0px;
+    margin-right: 50%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .welcome-section {
+    height: 45vh;
+    padding-top: 100px;
+  }
+
+  .welcome-section h1 {
+    margin-left: 0;
+    margin-right: 15%;
+  }
+
+  .welcome-section p {
+    margin-left: 0%;
+  }
+
+  .formcontainer {
+    width: 90%; /* Make form width responsive */
+    margin: 0 auto; /* Center form */
+  }
+
+  .column-one,
+  .column-two {
+    margin-left: 10px;
+    width: 100%; /* Full width for columns on small screens */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .contact-column-one,
+  .contact-column-two {
+    margin-left: 10px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact-column-two {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .projects-column-two {
+    margin-top: 5%;
+  }
+
+  .projects-column-one {
+    margin-left: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .projects-column-two {
+    margin-left: 0px;
+  }
+
+  .carousel {
+    max-width: 75%;
+  }
+
+  .carousel-slide img {
+    height: auto; /* Ensure images scale appropriately */
+  }
+
+  .contact {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .formcontainer {
+    max-width: 75%;
+  }
+}
