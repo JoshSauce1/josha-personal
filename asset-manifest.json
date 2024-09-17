@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/josha-personal/static/css/main.077fdd3e.css",
-    "main.js": "/josha-personal/static/js/main.fc98ab6c.js",
+    "main.js": "/josha-personal/static/js/main.c8035e2c.js",
     "static/js/453.f8a19c0a.chunk.js": "/josha-personal/static/js/453.f8a19c0a.chunk.js",
     "index.html": "/josha-personal/index.html",
     "main.077fdd3e.css.map": "/josha-personal/static/css/main.077fdd3e.css.map",
-    "main.fc98ab6c.js.map": "/josha-personal/static/js/main.fc98ab6c.js.map",
+    "main.c8035e2c.js.map": "/josha-personal/static/js/main.c8035e2c.js.map",
     "453.f8a19c0a.chunk.js.map": "/josha-personal/static/js/453.f8a19c0a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.077fdd3e.css",
-    "static/js/main.fc98ab6c.js"
+    "static/js/main.c8035e2c.js"
   ]
 }
