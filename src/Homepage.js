@@ -159,25 +159,25 @@ const MainContent = () => {
   // Define your carousel items here
   const carouselItems = [
     {
-      image: "/recipe_app.png",
+      image: "public\recipe_app.png",
       alt: "Slide 1",
       caption:
         "The Recipe Search API project uses React.js to let users search dishes and view ingredients via Edamam's API. It involves React Hooks, async API calls, and CSS modules, and is deployed on Google Firebase. More details are in the case study.",
     },
     {
-      image: "/CLIPT.png",
+      image: "publicCLIPT.png",
       alt: "Slide 2",
       caption:
         "The CLI-RESTAPI_DotNet6 project is a RESTful API built with .NET 6 to manage CLI commands. It uses .NET Core, MVC architecture, and C#, and supports CRUD operations with SwaggerUI for testing. More details are in the case study.",
     },
     {
-      image: "/cpu-emulator.png",
+      image: "publiccpu-emulator.png",
       alt: "Slide 3",
       caption:
         "The CPU-Emulator project in Java simulates a simple CPU, including binary operations, arithmetic, and logical functions. It features an assembler to convert assembly code into machine code. Key aspects include instruction formats, opcode compositions, and register usage. More details are in the architecture document.",
     },
     {
-      image: "/newegg.png",
+      image: "public\newegg.png",
       alt: "Slide 4",
       caption:
         "The Newegg Webscraper project is a Python script that searches Newegg.com for products, retrieves their prices and links, and sorts them by price. It uses Beautiful Soup and Requests for web scraping. The project aims to practice web scraping skills and was inspired by building a PC. More details are in the case study.",
